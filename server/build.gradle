@@ -1,0 +1,8 @@
+plugins {
+    id 'custom.spring'
+    id 'org.cyclonedx.bom' version '1.10.0'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+}

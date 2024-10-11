@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'groovy-gradle-plugin'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // prevents spring-boot-buildpack-platform from pulling 2.14.2
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.2'
+    implementation 'com.fasterxml.jackson.module:jackson-module-parameter-names:2.17.2'
+
+    implementation 'org.springframework.boot:spring-boot-gradle-plugin:3.3.4'
+    implementation 'io.spring.gradle:dependency-management-plugin:1.1.6'
+}
